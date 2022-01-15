@@ -6,7 +6,7 @@ n = int(input("Number of Posts to like : "))
 time.sleep(7)
 
 for i in range(n):
-    position = pyautogui.locateOnScreen("pic.png", confidence=0.95)
+    position = pyautogui.locateOnScreen("pic-heart.png", confidence=0.95)
     print(position)
     if position is not None:
         pyautogui.moveTo(position[0]+13, position[1]+7)
